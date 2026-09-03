@@ -72,6 +72,15 @@
     if(event.target === powerBiViewer){ powerBiViewer.close(); }
   });
 
+  var cvViewer = document.getElementById('cvViewer');
+  var viewCv = document.getElementById('viewCv');
+  var closeCv = document.getElementById('closeCv');
+  viewCv.addEventListener('click', function(){ cvViewer.showModal(); });
+  closeCv.addEventListener('click', function(){ cvViewer.close(); });
+  cvViewer.addEventListener('click', function(event){
+    if(event.target === cvViewer){ cvViewer.close(); }
+  });
+
   var form = document.getElementById('contactForm');
   var status = document.getElementById('formStatus');
   form.addEventListener('submit', function(e){

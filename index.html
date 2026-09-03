@@ -63,12 +63,12 @@
           </span>
         </div>
         <div class="hero-actions">
-          <a href="#experience" class="btn btn-gold">View Experience</a>
-          <a href="#contact" class="btn btn-outline">Contact Me</a>
-          <a href="Evans _Ombato_CV.pdf" download class="btn btn-outline">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Download CV
-          </a>
+          <a href="#experience" class="btn btn-outline" id="viewExperience">View Experience</a>
+          <a href="#contact" class="btn btn-outline" id="contactMe">Contact Me</a>
+          <button type="button" class="btn btn-outline" id="viewCv">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:15px;height:15px;"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg>
+            View CV
+          </button>
         </div>
         <div class="hero-stats">
           <div class="stat"><b>2+</b><span>Years in ICT &amp; Education</span></div>
@@ -239,8 +239,7 @@
   <section id="education" class="bg-white">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Academic Background</div>
-        <h2 class="section-title">Education</h2>
+        <h2 class="section-title">Academic Background</h2>
       </div>
       <div class="edu-grid reveal">
         <div class="edu-card">
@@ -259,7 +258,7 @@
         <div class="edu-card">
           <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 4 2 10l10 6 10-6z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg></div>
           <h4>Kenya Certificate of Primary Education</h4>
-          <p>Amaiko Primary School · 2007 – 2013</p>
+          <p>Matagaro Primary School · 2007 – 2013</p>
           <span class="badge-chip">KCPE</span>
         </div>
       </div>
@@ -325,12 +324,22 @@
     </div>
   </dialog>
 
+  <dialog class="cert-viewer" id="cvViewer" aria-labelledby="cvViewerTitle">
+    <div class="cert-viewer-head">
+      <h2 id="cvViewerTitle">Evans Otieno Ombato CV</h2>
+      <button class="cert-close" type="button" id="closeCv" aria-label="Close CV viewer">&#10005;</button>
+    </div>
+    <div class="cert-frame" oncontextmenu="return false" onselectstart="return false">
+      <iframe src="Evans%20_Ombato_CV.pdf#toolbar=0&navpanes=0&scrollbar=0" title="Evans Otieno Ombato CV" loading="lazy"></iframe>
+    </div>
+  </dialog>
+
   <!-- ============================= PROJECTS ============================= -->
   <section id="projects" class="projects-section">
     <div class="wrap">
       <div class="section-head reveal">
         <h2 class="section-title">Projects &amp; Impact</h2>
-        <p class="section-sub">A selection of software systems and institutional initiatives that demonstrate the breadth of Evans's ICT practice.</p>
+        <p class="section-sub">A selection of software systems and institutional initiatives that demonstrate the breadth of My ICT practice.</p>
       </div>
 
       <div class="subhead reveal">Software &amp; Systems Projects</div>
@@ -483,7 +492,7 @@
   <section id="gallery" class="bg-cream">
     <div class="wrap">
       <div class="section-head reveal">
-        <div class="eyebrow">Gallery</div>
+        
         <h2 class="section-title">On the job</h2>
         <p class="section-sub">Snapshots from systems administration and infrastructure work at NCHSM.</p>
       </div>
@@ -518,7 +527,7 @@
   </section>
 
   <!-- ============================= ACHIEVEMENTS + STRENGTHS ============================= -->
-  <section id="achievements" class="bg-white">
+  <section id="achievements" class="skills-section">
     <div class="wrap">
       <div class="two-col achievements-layout">
         <div class="achievement-column">
@@ -539,14 +548,13 @@
           <div class="section-head reveal">
             <h2 class="section-title">Professional Strengths</h2>
           </div>
-          <div class="edu-card reveal" style="background:var(--cream);">
-            <ul class="cert-list">
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Dual competence in ICT systems administration and classroom instruction</div>
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Strong attention to detail and data accuracy under examination and records workloads</div>
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Translates technical concepts into accessible, student-friendly instruction</div>
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Reliable under pressure — maintaining uptime and meeting deadlines simultaneously</div>
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Strong problem-solving and troubleshooting skills across technical and academic environments</div>
-            <div class="ach-item"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>Effective communication, teamwork and learner engagement skills</div>
+          <div class="strength-list reveal">
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Dual competence in ICT systems administration and classroom instruction</span></div>
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Strong attention to detail and data accuracy under examination and records workloads</span></div>
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Translates technical concepts into accessible, student-friendly instruction</span></div>
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Reliable under pressure, maintaining uptime and meeting deadlines simultaneously</span></div>
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Strong problem-solving and troubleshooting skills across technical and academic environments</span></div>
+            <div class="strength-card"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg><span>Effective communication, teamwork and learner engagement skills</span></div>
           </div>
         </div>
       </div>
@@ -616,14 +624,13 @@
 
 <footer class="bg-dark">
   <div class="wrap footer-inner">
-    <p>© <span id="year"></span> | BUILDING RELIABLE SYSTEMS. EMPOWERING PEOPLE. CREATING IMPACT.</p>
+    <p>© <span id="year"></span> | All rights reserved. BUILDING RELIABLE SYSTEMS. EMPOWERING PEOPLE. CREATING IMPACT.</p>
     <div class="social-follow" aria-label="Follow Evans Otieno Ombato">
-      <span>Follow me</span>
-      <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v6h4v-6h3.5l.5-4H13V9c0-.7.3-1 1-1z"/></svg>
-        Facebook
+      <a href="https://www.linkedin.com/in/evans-ombato" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.5 8.5A2.5 2.5 0 1 0 6.5 3a2.5 2.5 0 0 0 0 5.5zM4 9.5h5V21H4V9.5zM12 9.5h4.8v1.6h.1c.7-1.2 2.3-2 4.2-2 4.5 0 5.3 2.8 5.3 6.5V21h-5v-4.8c0-1.1 0-2.6-1.6-2.6s-1.9 1.2-1.9 2.5V21h-5V9.5z"/></svg>
+        LinkedIn
       </a>
-      <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube">
+      <a href="https://www.youtube.com/@EvansSmartDigital" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube at EvansSmartDigital">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2C2 9 2 12 2 12s0 3 .4 4.8a2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2c.4-1.8.4-4.8.4-4.8s0-3-.4-4.8zM10 15.3V8.7l5.5 3.3-5.5 3.3z"/></svg>
         YouTube
       </a>
